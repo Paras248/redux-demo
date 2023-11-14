@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import cakeActions from "../cake/cakeSlice";
+import { cakeActions } from "../cake/cakeSlice";
 
 const initialState = {
     numOfIceCream: 10,
@@ -23,5 +23,5 @@ const iceCreamSlice = createSlice({
     },
 });
 
-export default iceCreamSlice;
+export default iceCreamSlice.reducer;
 export const iceCreamActions = iceCreamSlice.actions;
